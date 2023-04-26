@@ -45,6 +45,53 @@
         max-width: 30ch;
         white-space: pre-wrap;
       }
+
+      .middleparagraph{
+        height: 80px;
+        width: 160px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 15px;
+        font-size: 20px;
+        line-height: 20pt;
+
+      }
+
+      .redbutton{
+        height: 80px;
+        width: 160px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+        background-color: #ffffff;
+      }
+
+     .redbuttonback{
+        background-color: #ffffff;
+        height: 80px;
+        width: 160px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+     }
+
+     .buttonred{
+        display: inline-block;
+        background-color: #AF143E;
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 500px
+     }
+
       .two-columns {
         text-align: center;
         font-size: 0;
@@ -58,7 +105,7 @@
         text-align: center;
       }
 
-	  .three-columns{
+      .three-columns{
 		text-align: center;
 		font-size: 0;
 		padding: 15px 0 25px;
@@ -107,14 +154,16 @@
 
 	  }
 
-	  .button-dark{
-		background-color: #171a1b;
-		color: #ffffff;
-		text-decoration: none;
-		padding: 10px 20px;
-		border-radius: 5px;
-		font-weight: bold;
-	  }
+	.titlepicks{
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        padding-left: 27px;
+        background-color: #ffffff;
+        color: #333333;
+    }
 
     </style>
   </head>
@@ -175,58 +224,53 @@
           </td>
         </tr>
 
-        <!-- THREE COLUMN SECTION -->
-
-               
+        <!-- middle Paragraph -->
+          
 
 		<tr>
-			<td>
-				<table width="100%">
-					<tr>
-						<td class="three-columns">
-
-							<table class="column">
-
-								<tr>
-									<td class="padding">
-										<table class="content1">
-                                            
-											<tr>
-                                                
-												<td>
-													<a href="#"><img src="img/email.png" 
-														alt=""width="130" 
-														style="max-width:130px;"></a>
-                                                        <p>Every destination has its must-sees, but we're here to help you see a side of Barcelona most travelers miss. Venture off the beaten path and escampe the crowds with our hand-picked list of experiences that reveal its true caracter.</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													
-				  								</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-
-							</table>
-
-							
-
-						</td>
-					</tr>
-				</table>
+			<td class="middleparagraph">
+                <p>Every destination has its must-sees, but we're here to help you see a side of Barcelona most travelers miss. Venture off the beaten path and escampe the crowds with our hand-picked list of experiences that reveal its true caracter.</p>
+				
 			</td>
 		</tr>
+
+        <!-- Red Button section -->
+
+        <tr class="redbutton" style="background-color: #ffffff";>
+            <td class="redbuttonback" style="width:50%;">
+                <a href="#" class="buttonred">Discover hidden gems</a>
+            </td>
+        </tr>
 
         <!-- TWO COLUMN SECTION -->
 
 		<tr>
-			<td style="background-color: #26292b; color: #ffffff;">
+			<td style="background-color: #ffffff; color: #171A1B;">
 				<table width="100%">
+                    <p class="titlepicks">Top Pick Based on your bookings</p>
 
 					<tr>
+                        
 						<td class="two-columns last">
+
+                            <table class="column">
+								<tr>
+									<td class="padding">
+
+										<table class="content">
+                                            
+											<tr>
+												<td>
+												<p style="padding-bottom: 60px;"> Over the years we have 
+														Barcelona City Tour Hop-On Hop-off</p>
+													<a href="#" class="button">Learn More</a>
+													
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
 
 							<table class="column">
 								<tr>
@@ -249,31 +293,7 @@
 								</tr>
 							</table>
 
-							<table class="column">
-								<tr>
-									<td class="padding">
-
-										<table class="content">
-											<tr>
-												<td>
-
-													<p style="font-weight:bold;font-size:18px"
-													>Create Custom Designs</p>
-													<p style="padding-bottom: 60px;"> Over the years we have 
-														built up to a massive 
-														portfolio our client 
-														website and email designs</p>
-													<a href="#" class="button">Learn More</a>
-													
-												</td>
-											</tr>
-										</table>
-
-										
-
-									</td>
-								</tr>
-							</table>
+							
 
 
 						</td>
@@ -287,56 +307,9 @@
 
         <!-- TITLE, TEXT & BUTTON -->
 
-		<tr>
-			<td style="padding:15px 0px 50px;">
-				<table width="100%">
-
-					<tr>
-						<td style="text-align: center;padding:15px;">
-							<p style="font-size: 20px;font-weight: bold;">HTML Email Designs</p>
-							<p style="line-height: 23px;font-size: 15px;padding: 5 0 15px;">Responsive HTML 
-								Email Templates that
-								 you can build around. 
-								 Lorem ipsum dolor sit amet 
-								 consectetur adipisicing elit. 
-								 Corporis expedita dicta deserunt 
-								 officia voluptate laborum temporibus, 
-								 aperiam quisquam adipisci! 
-								 </p>
-								 <a href="#" class="button-dark">Get Resume</a>
-						</td>
-					</tr>
-
-				</table>
-			</td>
-		</tr>
-
+		
         <!-- FOOTER SECTION -->
 
-		<tr>
-			<td style="background-color: #26292b;">
-				<table width="100%">
-
-
-					<tr>
-						<td style="text-align: center;padding:45px 20px;color:#ffffff">
-							<a href="#"><img src="img/modern-white.png" alt="" width="180"></a>
-							<p style="padding: 10px;">Modern HTML Email</p>
-							<p style="padding: 10px;">9800 Montgomery Blvd NE</p>
-							<a href="#"><img src="img/white-facebook.png" alt="" width="30"/></a>
-							<a href="#"><img src="img/white-twitter.png" alt="" width="30"/></a>
-							<a href="#"><img src="img/white-youtube.png" alt="" width="30"/></a>
-							<a href="#"><img src="img/white-linkedin.png" alt="" width="30"/></a>
-							<a href="#"><img src="img/white-instagram.png" alt="" width="30"/></a>
-							<p>Call Me 331-451-1552</p>
-
-						</td>
-					</tr>
-
-
-				</table>
-			</td>
-		</tr>
 
 
       </table>
