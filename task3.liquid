@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design A</title>
+    <title>{{title}}</title>
     <link rel="icon" href="img/faviator.ico" />
     <style type="text/css">
       body {
@@ -106,7 +106,7 @@
       }
 
       .two-columns.last {
-        padding: 15px 0;
+        padding: 0px 0;
       }
 
       .two-columns .padding {
@@ -225,84 +225,57 @@
         <!-- TWO COLUMN SECTION -->
 
         <tr>
-          <td style="background-color: #ffffff; color: #171a1b">
-            <table width="100%">
-              <p class="titlepicks">Top Pick Based on your bookings</p>
-
-              <tr>
-                <td class="two-columns last">
-                  <table class="column">
-                    <tr>
-                      <td class="padding">
-                        <table class="content">
-                          <tr>
-                            <td>
-                              <p
-                                style="
-                                  padding-bottom: 25px;
-                                  padding-left: 10px;
-                                  margin: 0;
-                                  width: 100%;
-                                "
-                              >
-                                Over the years we have Barcelona City Tour
-                                Hop-On Hop-off
-                              </p>
-                              <div
-                                style="padding-left: 10px; padding-bottom: 25px"
-                              >
-                                <img
-                                  src="https://cdn.tripadvisor.com/img2/email/rex/ratingstar4.5.png"
-                                  alt="ratingstars4.5"
-                                  width="100"
-                                />1864 reviews
-                              </div>
-
-                              <div style="padding-left: 10px">
-                                <a
-                                  href="https://www.viator.com/tours/Barcelona/City-Sightseeing-Barcelona-Hop-On-Hop-Off-Tour/d562-2916BARCELONA"
-                                  target="_blank"
-                                  class="button"
-                                  >Learn More</a
-                                >
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table class="column">
-                    <tr>
-                      <td class="padding">
-                        <table class="content">
-                          <tr>
-                            <td>
-                              <a
-                                href="https://www.viator.com/tours/Barcelona/City-Sightseeing-Barcelona-Hop-On-Hop-Off-Tour/d562-2916BARCELONA"
-                                target="_blank"
-                                ><img
-                                  src="https://media.tacdn.com/media/attractions-splice-spp-360x240/07/1e/c1/f3.jpg"
-                                  alt=""
-                                  width="260px"
-                                  style="max-width: 260px"
-                              /></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-
-            
-          </td>
+            <td style="background-color: #ffffff; color: #171a1b">
+                <table width="100%">
+                <p class="titlepicks">Top Pick Based on your bookings</p>
+                {% assign product_code = "insert product code here" %}
+                <tr {{ product_code }}>
+                    <td class="two-columns last">
+                    <table class="column">
+                        <tr>
+                        <td class="padding">
+                            <table class="content">
+                            <tr>
+                                <td>
+                                <p style="padding-bottom: 25px; padding-left: 10px; margin: 0; width: 100%;">
+                                    {{ product_name }}
+                                </p>
+                                <div style="padding-left: 10px; padding-bottom: 25px">
+                                    <img src="{{ product_rating }}" alt="" width="100">{{ product_review_count }}
+                                </div>
+                                <div style="padding-left: 10px">
+                                    <a href="{{ product_link }}" target="_blank" class="button">Learn More</a>
+                                </div>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="padding">
+                            <table class="content">
+                            <tr>
+                                <td>
+                                <a href="{{ product_link }}" target="_blank">
+                                    <img src="{{ product_photo_url }}" alt="" width="260px" style="max-width: 260px" />
+                                </a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+                </table>
+            </td>
         </tr>
 
-        
+            </table>          
+          </td>
+        </tr>
       </table>
     </center>
   </body>
